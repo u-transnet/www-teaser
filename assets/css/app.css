@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Russo Sans';
+    src: url('../fonts/RussoSansBold.eot');
+    src: url('../fonts/RussoSansBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RussoSansBold.woff') format('woff'),
+        url('../fonts/RussoSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+
+.logo, .navbar a:hover {
+	color: #fff;
+}
+
+.header {
+	font-family: 'Russo Sans';
+	font-size: 2rem;
+	padding-top: 5rem;
+}
+
+.unav {
+	padding: .5rem 2rem .5rem 2rem;
+}
+
+.unav, .main_motto1:hover {
+	color: #fff;
+}
+
+.unav__button {
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	padding: .6rem 1.25rem;
+	font-family: 'Russo Sans';
+	color: #fff;
+	cursor: pointer;
+}
+
+.unav__button:hover {
+	background: rgba(255,255,255,.5);
+}
+
+.unav__lang {
+	color: #fff;
+	margin-right: 1rem;
+}
+
+.unav__lang.active {
+	text-decoration: underline;
+}
+
+.unav__toggler {
+	position: relative;
+	margin-left: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+.unav__toggler span {
+	display: block;
+}
+
+
+.unav__toggler:hover {
+	cursor: pointer;
+}
+
+.unav__toggler-icon {
+	position: absolute;
+	color: #fff;
+	right: 0;
+	left: 0;
+	font-size: 2rem;
+}
+
+
+
+.main__motto1 {
+	font-family: 'Russo Sans';
+	font-size: 2.5rem;
+	margin-bottom: -10px;
+	padding-top: 10px;
+}
+
+.main__motto2 {
+	font-family: 'Russo Sans';
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+.main {
+	color: #fff;
+	padding-top: 155px;
+	height: 100%;
+	width: 100%;
+	background: rgb(30,185,183);
+	background: -moz-linear-gradient(top,  rgba(30,185,183,1) 0%, rgba(44,119,150,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(30,185,183,1) 0%,rgba(44,119,150,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(30,185,183,1) 0%,rgba(44,119,150,1) 100%);
+}
+
+.main__content {
+	height: 100%;
+	background-image: url('../images/tablet.png');
+	background-size: 118%;
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.main__header {
+	font-size: 5rem;
+	font-family: 'Russo Sans';
+}
+
+.main__subheader {
+	font-weight: 100;
+	font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #d3e9ef;
+}
+
+.main__versions {
+	margin: 80px 0 20px 0;
+}
+
+.main__versions-ul {
+	clear: both;
+	list-style: none;
+}
+
+.main__versions-ul li {
+	display: block;
+	position: relative;
+    color: #d3e9ef;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.main__versions-ul li a, .main__versions-progress a {
+    color: #d3e9ef;
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+.main__versions-ul .progress {
+    height: 1px;
+    background-color: #195f7c;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+}
+
+.main__versions-ul .progress-bar {
+    height: 1px;
+    background-color: #fff;
+}
+
+.main__versions-progress, .main__versions-progress a {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main__versions-current {
+	position: relative;
+}
+
+.main__versions-progress .progress {
+    background-color: #195f7c;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.3rem;
+
+}
+
+.main__versions-progress .progress-bar {
+	background-color: #fff;
+
+}
+
+
+.main__buttons {
+	margin: 105px 0;
+}
+
+.main__buttons-btn {
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	font-size: .6rem;
+	padding: 1.1rem 1.25rem;
+	font-family: 'Russo Sans';
+	color: #003850;
+	cursor: pointer;
+	width: 100%;
+}
+
+
+/* media */
+
+@media screen and (max-width: 1280px){
+
+	.logo img {
+		width: 48px;
+	}
+
+	.main__motto1 {
+		font-size: 1.6em;
+		padding-top: 0;
+	}
+
+	.main__motto2 {
+		font-size: .6em;
+	}
+
+	.main {
+		padding-top: 90px;
+	}
+
+	.main__header {
+		font-size: 3.6rem;
+	}
+
+	.main__content {
+		background-size: 62%;
+		background-position: center bottom;
+	}
+
+
+	.main__versions {
+		padding-top: 0;
+		margin: 30px 0 -10px 0;
+	}
+
+	.main__versions-ul li {
+		line-height: 1.1rem;
+	}
+
+	.main__versions-ul li a, .main__versions-progress a, .main__versions-ul li {
+		font-size: .9rem;
+	}
+
+	.main__subheader {
+		font-size: 1rem;
+	}
+
+	.main__versions-ul .progress {
+		bottom: .5rem;
+	}
+
+	.main__versions-progress .progress {
+	    height: 4px;
+	    bottom: .7rem;
+	}
+
+    .main__versions-progress, .main__versions-progress a, .main__versions-progress, .main__versions-progress a {
+    	font-size: 1rem;
+    }
+
+    .main__buttons {
+	    margin: 70px 0;
+    }
+
+    .main__buttons-btn {
+    	padding: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 414px){
+
+	.main {
+	    padding-top: 120px;
+	}
+
+    .main__motto1, .main__motto2 {
+    	display: none;
+    }
+
+    .unav__button {
+    	padding: .5rem;
+    	font-size: .5rem;
+    }
+
+	.main__header {
+		font-size: 2.5rem;
+	}
+
+	.main__subheader {
+	    font-size: .6rem;
+	}
+
+	.main__content {
+		background-size: 140%;
+	}
+
+    .main__versions-ul {
+    	padding: 0;
+    	margin: 0;
+    }
+
+	.main__buttons-btn {
+	    margin-bottom: 1rem;
+	}
+
+    .col-xs-2, .col-sm-2 {
+    	width: 16%;
+    }
+
+    .col-xs-8, .col-sm-8 {
+    	width: 64%;
+    }
+
+    .main__versions-ul li, .main__versions-ul li a {
+    	line-height: 1rem;
+    	font-size: .6rem;
+    }
+
+	.main__versions-progress {
+    	line-height: 1rem;
+    	font-size: .65rem;
+        margin-top: 30px;
+	}
+
+    .main__versions-progress a {
+    	font-size: .65rem;
+    }
+
+	.main__versions-progress .progress {
+	    bottom: .45rem;
+	}
+
+
+}
+
+
+@media screen and (max-width: 375px){
+
+	.unav__lang {
+	    margin-right: .5rem;
+	}
+
+	.unav__toggler {
+	    margin-left: 10px;
+	}
+
+	.main__header {
+        font-size: 2rem;
+    }
+
+    .main__versions-ul li, .main__versions-ul li a {
+    	line-height: .8rem;
+    	font-size: .55rem;
+    }
+
+	.main__versions-progress {
+    	line-height: .8rem;
+    	font-size: .5rem;
+        margin-top: 20px;
+	}
+
+    .main__versions-progress a {
+    	font-size: .5rem;
+    }
+
+	.main__versions-progress .progress {
+	    bottom: .35rem;
+	}
+
+}
+
+@media screen and (max-width: 320px){
+
+	.logo img {
+	    width: 38px;
+	}
+
+	.unav {
+	    padding: .5rem .75rem .5rem .75rem;
+	}
+
+	.unav__toggler {
+        font-size: .8em;
+	}
+
+	.main__header {
+	    font-size: 1.9rem;
+	}
+
+	.main__subheader {
+	    font-size: .5rem;
+	}
+
+    .main__versions-ul li, .main__versions-ul li a {
+    	line-height: .7rem;
+    	font-size: .4rem;
+    }
+
+	.main__versions-progress {
+    	line-height: .7rem;
+    	font-size: .4rem;
+        margin-top: 18px;
+	}
+
+    .main__versions-progress a {
+    	font-size: .45rem;
+    }
+    
+	.main__buttons {
+	    margin: 40px 0;
+	}
+
+}
+
